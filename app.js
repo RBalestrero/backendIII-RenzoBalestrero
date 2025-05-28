@@ -10,6 +10,7 @@ const port = process.env.PORT || 80;
 app.use(express.json());
 
 app.use('/spareParts', sparePartsRouter);
+app.use('/', express.static('public'));
 
 app.use(errorHandler);
 
