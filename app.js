@@ -2,10 +2,13 @@ import express from 'express';
 import errorHandler from './middlewares/errorHandler.js';
 import dotenv from 'dotenv';
 import sparePartsRouter from './routes/spareParts.routes.js';
+import cors from 'cors';
 
 dotenv.config();
-
 const app = express();
+
+
+app.use(cors());
 const port = process.env.PORT || 80;
 app.use(express.json());
 
