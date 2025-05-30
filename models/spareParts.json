@@ -1,13 +1,7 @@
 [
   {
-    "id": 1,
-    "name": "Parte de la base",
-    "description": "Parte de la base de la computadora",
-    "price": 100,
-    "quantity": 1
-  },
-  {
     "id": 2,
+    "marca": "Zebra",
     "name": "Parte del disco duro",
     "description": "Parte del disco duro de la computadora",
     "price": 50,
@@ -15,6 +9,7 @@
   },
   {
     "id": 3,
+    "marca": "HID",
     "name": "Parte del disco magnetico",
     "description": "Parte del disco magnetico de la computadora",
     "price": 20,
@@ -22,6 +17,7 @@
   },
   {
     "id": 4,
+    "marca": "Matica",
     "name": "stepper motor",
     "description": "Motor de paso de correa",
     "price": 100,

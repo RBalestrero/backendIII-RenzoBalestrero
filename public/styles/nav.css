@@ -1,0 +1,86 @@
+/* Navbar general */
+nav, nav * {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1rem; /* o 16px */
+}
+
+nav {
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #0050C3;
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sdropbtnns-serif;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+
+/* Logo */
+nav .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Links y botones del nav */
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.nav-links a,
+.dropbtn {
+  background: none;
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-links a:hover,
+.dropbtn:hover {
+  background-color: #34495e;
+}
+
+/* Dropdown container */
+.dropdown {
+  position: relative;
+}
+
+/* Dropdown oculto por defecto */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 110%;
+  left: 0;
+  background-color: #ecf0f1;
+  min-width: 160px;
+  border-radius: 6px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  z-index: 999;
+  overflow: hidden;
+}
+
+/* Links dentro del dropdown */
+.dropdown-content a {
+  color: #2c3e50;
+  padding: 0.75rem 1rem;
+  display: block;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+.dropdown-content a:hover {
+  background-color: #dfe6e9;
+}
+
+/* Mostrar dropdown con clase activa */
+.dropdown.active .dropdown-content {
+  display: block;
+}

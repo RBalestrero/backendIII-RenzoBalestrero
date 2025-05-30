@@ -15,5 +15,6 @@ export const readJSON = async (filename) => {
 
 export const writeJSON = async (filename, data) => {
   const filePath = getDataPath(filename);
+  await fs.writeFile(filePath, JSON.stringify(''));
   await fs.writeFile(filePath, JSON.stringify(data, null, 2));
 };
