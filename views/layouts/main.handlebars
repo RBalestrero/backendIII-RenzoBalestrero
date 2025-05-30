@@ -1,21 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/styles/index.css" />
-    <link rel="stylesheet" href="/styles/nav.css" />
-    <title>Renzo Balestrero</title>
-  </head>
-  <body>
-    <nav>
-      <div class="logo">TANGOID - Operaciones & Servicios</div>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <link rel="stylesheet" href="/styles/nav.css">
+</head>
+<body>
+  <nav>
+    <div class="logo">TANGOID - Operaciones & Servicios</div>
 
       <div class="nav-links">
         <div class="dropdown" data-dropdown>
           <button class="dropbtn" data-dropdown-button>Repuestos</button>
           <div class="dropdown-content">
-            <a href="#repuestos">Operaciones</a>
+            <a href="/repuestos/operaciones">Operaciones</a>
             <a href="#herramientas">Bancor</a>
             <a href="#garantia">Garantías/RMA</a>
           </div>
@@ -37,12 +35,7 @@
           </div>
         </div>
 
-        <div class="dropdown" data-dropdown>
-          <button class="dropbtn" data-dropdown-button>Administración</button>
-          <div class="dropdown-content">
-            <a href="#instalacion">Facturas</a>
-          </div>
-        </div>
+        <a href="/">Inicio</a>
 
         <div class="dropdown" data-dropdown>
           <button class="dropbtn" data-dropdown-button>Partners</button>
@@ -58,32 +51,8 @@
         <a href="https://www.idshop.com.ar/" target="_blank">IDSHOP</a>
         <a href="https://www.youtube.com/@DoctorIdOficial" target="_blank">DOCTORID</a>
       </div>
-    </nav>
-
-    <div id="app">
-      <div class="filtros">
-        <div class="filtro-izquierda">
-          <input
-            type="text"
-            id="filtroDescripcion"
-            placeholder="Buscar por descripción..."
-          />
-        </div>
-
-        <div class="filtro-derecha">
-          <select id="fabricante">
-          </select>
-
-          <select id="categoria">
-          </select>
-
-          <select id="disponibilidad">
-          </select>
-        </div>
-      </div>
-    </div>
-
-    <script src="/js/nav.js"></script>
-    <script type="module" src="/js/index.js"></script>
-  </body>
+  </nav>
+  {{{body}}}
+  
+  <script src="/js/nav.js"></script>
 </html>

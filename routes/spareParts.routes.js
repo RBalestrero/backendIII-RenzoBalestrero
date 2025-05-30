@@ -3,6 +3,7 @@ import { getAll_spareParts, get_SparePartsById, add_SparePart, update_SparePart,
 
 const sparePartsRouter = Router();
 
+
 sparePartsRouter.get('/', getAll_spareParts);
 sparePartsRouter.get('/:id', get_SparePartsById);
 sparePartsRouter.put('/:id', update_SparePart);
