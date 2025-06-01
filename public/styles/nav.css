@@ -9,7 +9,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
+  padding: 1rem 80px;
   background-color: #0050C3;
   color: white;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sdropbtnns-serif;

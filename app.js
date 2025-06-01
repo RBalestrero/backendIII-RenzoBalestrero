@@ -32,7 +32,7 @@ app.use(cors());
 
 app.use('/',home);
 app.use('/spareParts', sparePartsRouter);
-app.use('/repuestos/operaciones', repuestosOperacionesRouter);
+app.use('/repuestos/inventario', repuestosOperacionesRouter);
 
 app.use(errorHandler);
 

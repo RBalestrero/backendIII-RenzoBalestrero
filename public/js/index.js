@@ -45,42 +45,61 @@ function llenarSelect(selectElement, valores, placeholder = "") {
 
 
   const tabla = document.createElement("table");
-  tabla.innerHTML = `
-        <tr>
-            <th>ID</th>
-            <th>Marca</th>
-            <th>Nombre</th>
-            <th>Descripción</th>
-            <th>Precio</th>
-            <th>Cantidad</th>
-        </tr>
-    `;
 
-  data.forEach((part) => {
-    const tr = document.createElement("tr");
-    const td1 = document.createElement("td");
-    const td6 = document.createElement("td");
-    const td2 = document.createElement("td");
-    const td3 = document.createElement("td");
-    const td4 = document.createElement("td");
-    const td5 = document.createElement("td");
+// Agrega el encabezado con checkbox general
+tabla.innerHTML = `
+  <tr>
+      <th>Part Number</th>
+      <th>Marca</th>
+      <th>Nombre</th>
+      <th>Descripción</th>
+      <th>Precio</th>
+      <th>Cantidad</th>
+      <th><input type="checkbox" id="select-all"></th>
+  </tr>
+`;
 
-    td1.innerText = part.id;
-    td6.innerText = part.marca;
-    td2.innerText = part.name;
-    td3.innerText = part.description;
-    td4.innerText = part.price;
-    td5.innerText = part.quantity;
+data.forEach((part, index) => {
+  const tr = document.createElement("tr");
 
-    tr.appendChild(td1);
-    tr.appendChild(td6);    
-    tr.appendChild(td2);
-    tr.appendChild(td3);
-    tr.appendChild(td4);
-    tr.appendChild(td5);
+  const td1 = document.createElement("td");
+  const td6 = document.createElement("td");
+  const td2 = document.createElement("td");
+  const td3 = document.createElement("td");
+  const td4 = document.createElement("td");
+  const td5 = document.createElement("td");
+  const tdCheck = document.createElement("td");
 
-    tabla.appendChild(tr);
-  });
-  document.getElementById("app").appendChild(tabla);
+  td1.innerText = part.id;
+  td6.innerText = part.marca;
+  td2.innerText = part.name;
+  td3.innerText = part.description;
+  td4.innerText = part.price;
+  td5.innerText = part.quantity;
+
+  const checkbox = document.createElement("input");
+  checkbox.type = "checkbox";
+  checkbox.classList.add("row-checkbox");
+  tdCheck.appendChild(checkbox);
+
+  tr.appendChild(td1);
+  tr.appendChild(td6);
+  tr.appendChild(td2);
+  tr.appendChild(td3);
+  tr.appendChild(td4);
+  tr.appendChild(td5);
+  tr.appendChild(tdCheck);
+
+  tabla.appendChild(tr);
+});
+
+document.getElementById("app").appendChild(tabla);
+
+// Lógica para seleccionar/deseleccionar todos
+document.getElementById("select-all").addEventListener("change", function () {
+  const checkboxes = tabla.querySelectorAll(".row-checkbox");
+  checkboxes.forEach((cb) => (cb.checked = this.checked));
+});
+
 })();
 
