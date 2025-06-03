@@ -76,8 +76,8 @@ const renderTable = async (repuestos) => {
     td6.innerText = part.marca;
     td2.innerText = part.name;
     td3.innerText = part.description;
-    td4.innerText = part.price;
-    td5.innerText = part.quantity;
+    td4.innerText = part.precio;
+    td5.innerText = part.cantidad;
 
     const checkbox = document.createElement("input");
     checkbox.type = "checkbox";

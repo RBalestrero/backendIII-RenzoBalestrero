@@ -1,26 +1,82 @@
 [
   {
-    "id": 2,
+    "id": "X7G2QW",
+    "name": "Rodillo de arrastre",
+    "description": "Fácil de instalar",
     "marca": "Zebra",
-    "name": "Parte del disco duro",
-    "description": "Parte del disco duro de la computadora",
-    "price": 50,
-    "quantity": 1
+    "precio": 189.99,
+    "cantidad": 37
   },
   {
-    "id": 3,
+    "id": "A9D4E1",
+    "name": "Cabezal de impresión",
+    "description": "Optimiza el rendimiento",
     "marca": "HID",
-    "name": "Parte del disco magnetico",
-    "description": "Parte del disco magnetico de la computadora",
-    "price": 20,
-    "quantity": 1
+    "precio": 322.50,
+    "cantidad": 15
   },
   {
-    "id": 4,
+    "id": "L0K9VZ",
+    "name": "Motor paso a paso",
+    "description": "Versión mejorada",
+    "marca": "TSC",
+    "precio": 275.75,
+    "cantidad": 42
+  },
+  {
+    "id": "G7R3MA",
+    "name": "Cinta de impresión",
+    "description": "Certificado por el fabricante",
+    "marca": "Godex",
+    "precio": 58.20,
+    "cantidad": 60
+  },
+  {
+    "id": "P4J8XN",
+    "name": "Fuente de poder",
+    "description": "Repuesto genérico de calidad",
     "marca": "Matica",
-    "name": "stepper motor",
-    "description": "Motor de paso de correa",
-    "price": 100,
-    "quantity": 5
+    "precio": 142.30,
+    "cantidad": 10
+  },
+  {
+    "id": "M1T6UC",
+    "name": "Sensor de etiquetas",
+    "description": "Repuesto de alta durabilidad",
+    "marca": "Entrust",
+    "precio": 199.95,
+    "cantidad": 25
+  },
+  {
+    "id": "N2C5ZR",
+    "name": "Placa lógica",
+    "description": "Diseñado para uso industrial",
+    "marca": "Zebra",
+    "precio": 309.00,
+    "cantidad": 5
+  },
+  {
+    "id": "W8L1BY",
+    "name": "Ventilador interno",
+    "description": "Con garantía de 1 año",
+    "marca": "HID",
+    "precio": 89.90,
+    "cantidad": 80
+  },
+  {
+    "id": "K5X7AD",
+    "name": "Panel de control",
+    "description": "Reemplazo original",
+    "marca": "TSC",
+    "precio": 120.00,
+    "cantidad": 22
+  },
+  {
+    "id": "Q3U6NE",
+    "name": "Cubre cabezal",
+    "description": "Compatible con varios modelos",
+    "marca": "Godex",
+    "precio": 45.60,
+    "cantidad": 50
   }
 ]
